@@ -1,6 +1,6 @@
-let ein: number = 1;
-let zwei: string = 'hello';
-let drei: boolean[] = [true, false] // an array of booleans
+// let ein: number = 1;
+// let zwei: string = 'hello';
+// let drei: boolean[] = [true, false] // an array of booleans
 // Can also just allow TS to infer types
 
 // 3 + [1]; // JS will allow this! 
