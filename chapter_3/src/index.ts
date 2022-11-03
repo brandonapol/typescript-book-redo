@@ -1,3 +1,5 @@
+import { fips } from "crypto";
+
 function squareOf(n: number) {
     return n * n;
 }
@@ -100,3 +102,22 @@ let bb = [1, 'a'] // (string | number)
 //* undefined - variable that hasn't been given a value yet
 //* void - function that doesn't have a return statement
 //* never - function that doesn't return ever
+
+// TypeScript's error codes are very specific, and easy to google!
+
+// skip this with students
+const enum Flippable {
+    Burger = 'Burger',
+    Chair = 'Chair',
+    Cup = 'Cup',
+    Skateboard = 'Skateboard',
+}
+
+function flip(f: Flippable){
+    return 'flipped it'
+}
+
+flip(Flippable.Chair)
+// flip(12)
+
+// Enums not a recommended way of using TS
