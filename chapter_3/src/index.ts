@@ -1,4 +1,4 @@
-import { fips } from "crypto";
+
 
 function squareOf(n: number) {
     return n * n;
@@ -66,18 +66,24 @@ type Dog = { name: string, barks: boolean, wags: boolean }
 type CatOrDogOrBoth = Cat | Dog 
 type CatAndDog = Cat & Dog 
 
-let rex = {
+let rex: Dog = {
     name: 'Rex',
     barks: true,
     wags: true,
 }
 
-let confused = {
+let confused: CatAndDog = {
     name: 'Blex',
     barks: true,
     wags: true,
     purrs: true,
 }
+
+let bonkers: CatOrDogOrBoth = {
+    name: 'Bonkers',
+    purrs: true
+}
+
 
 // Out in the wild
 function trueOrNull (isTrue: boolean) {
